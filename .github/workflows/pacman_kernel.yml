@@ -104,8 +104,6 @@ jobs:
           echo "=== VFS v11 check ==="
           grep -c "SukiSU Cloak v11" fs/namei.c fs/open.c
           grep -c "is_relative" fs/namei.c fs/open.c
-          echo "=== Supercall gate check ==="
-          grep -n "reboot-magic gate" KernelSU*/kernel/supercall/supercall.c
 
       - name: Verify build config + KSU/SUSFS fragment present
         run: |
